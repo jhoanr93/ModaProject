@@ -1,0 +1,24 @@
+<form [formGroup]="prendaForm" (ngSubmit)="submitForm()">
+    <div formArrayName="prendas">
+      <div *ngFor="let prenda of prendaForm.get('prendas').controls; let i=index" [formGroupName]="i">
+        <label>
+          Prenda:
+          <input type="text" formControlName="nombre">
+        </label>
+        <label>
+          Talla:
+          <input type="text" formControlName="talla">
+        </label>
+        <label>
+          Color:
+          <input type="text" formControlName="color">
+        </label>
+        <label>
+          Cantidad:
+          <input type="number" formControlName="cantidad">
+        </label>
+      </div>
+    </div>
+    <button type="submit">Enviar</button>
+  </form>
+  

@@ -1,0 +1,43 @@
+<form [formGroup]="tiendaForm">
+    <label>
+      País:
+      <input type="text" formControlName="pais">
+    </label>
+    <label>
+      Provincia:
+      <input type="text" formControlName="provincia">
+    </label>
+    <label>
+      Ciudad:
+      <input type="text" formControlName="ciudad">
+    </label>
+    <label>
+      Nombre de quien recoge:
+      <input type="text" formControlName="nombreRecoge">
+    </label>
+    <label>
+      Identificación:
+      <input type="text" formControlName="identificacion">
+    </label>
+    <label>
+      Teléfono de contacto:
+      <input type="tel" formControlName="telefonoRecoge">
+    </label>
+    <label>
+      Día de recogida:
+      <input type="date" formControlName="diaRecogida">
+    </label>
+    <label>
+      Centro comercial o tienda de preferencia:
+      <input type="text" formControlName="centroComercial">
+    </label>
+    <label>
+      ¿Envolver en regalo?
+      <input type="checkbox" formControlName="envolverRegalo">
+    </label>
+    <label>
+      Tiempo de retención (días):
+      <input type="number" formControlName="tiempoRetencion">
+    </label>
+  </form>
+  

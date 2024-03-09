@@ -1,0 +1,46 @@
+<form [formGroup]="envioForm">
+    <label>
+      País:
+      <input type="text" formControlName="pais">
+    </label>
+    <label>
+      Provincia:
+      <input type="text" formControlName="provincia">
+    </label>
+    <label>
+      Ciudad:
+      <input type="text" formControlName="ciudad">
+    </label>
+    <label>
+      Dirección:
+      <input type="text" formControlName="direccion">
+    </label>
+    <label>
+      Conjunto o casa (Opcional):
+      <input type="text" formControlName="conjuntoCasa">
+    </label>
+    <label>
+      Nombre del edificio (Opcional):
+      <input type="text" formControlName="nombreEdificio">
+    </label>
+    <label>
+      Apartamento (Opcional):
+      <input type="text" formControlName="apartamento">
+    </label>
+    <label>
+      Código postal:
+      <input type="text" formControlName="codigoPostal">
+    </label>
+    <label>
+      Horas de disponibilidad:
+      <input type="text" formControlName="horasDisponibilidad">
+    </label>
+    <label>
+      ¿Se recibe en persona o en portería?
+      <select formControlName="recepcion">
+        <option value="persona">Persona</option>
+        <option value="portería">Portería</option>
+      </select>
+    </label>
+  </form>
+  

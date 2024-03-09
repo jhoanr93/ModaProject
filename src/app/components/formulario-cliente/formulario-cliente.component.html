@@ -1,0 +1,20 @@
+<form [formGroup]="clienteForm" (ngSubmit)="submitForm()">
+    <label>
+      Nombre:
+      <input type="text" formControlName="nombre">
+    </label>
+    <label>
+      Apellido:
+      <input type="text" formControlName="apellido">
+    </label>
+    <label>
+      Correo electrónico:
+      <input type="email" formControlName="email">
+    </label>
+    <label>
+      Teléfono:
+      <input type="tel" formControlName="telefono">
+    </label>
+    <button type="submit" [disabled]="clienteForm.invalid">Enviar</button>
+  </form>
+  
